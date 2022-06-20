@@ -23,7 +23,7 @@ function App() {
       <div id='intro'>
         <h2 style={{ color: 'whitesmoke' }}>Hi My name is Idan Bardugo and I am an experienced Full-Stack Developer</h2>
         <div id='intro-picture-container'>
-          <img id='intro-picture' src={require('./img/idan2.jpeg')} />
+          <img id='intro-picture' src={require('./img/idan.png')} />
         </div>
       </div>
 
@@ -65,9 +65,9 @@ function App() {
             <div className='card-title'>
               <h2>Back-End Developer</h2></div>
             <div className='card-body'>
-              <p>Building user interfaces from scratch.
-                Using various state management like Redux, Vuex, Mobx.
-                Experience in building complex UI systems with huge scale of data.</p>
+                <li className='tool'>Building user interfaces from scratch.</li>
+                <li className='tool'> Using various state management like Redux, Vuex, Mobx.</li>
+                <li className='tool'> Experience in building complex UI systems with huge scale of data.</li>
             </div>
             <div className='card-technologies'>
               <h4>Front-end Frameworks and Tools:</h4>
