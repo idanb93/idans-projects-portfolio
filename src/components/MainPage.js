@@ -3,6 +3,7 @@ import Cards from './Cards';
 import Footer from './Footer';
 import Intro from './Intro';
 import AboutMe from './AboutMe';
+import Boxes from './Boxes';
 
 function MainPage() {
 
@@ -11,7 +12,8 @@ function MainPage() {
             <Intro />
             <AboutMe />
             <Cards />
-            <Projects />
+            <Projects/>
+            <Boxes/>
             <Footer />
         </>
     )

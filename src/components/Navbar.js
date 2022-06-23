@@ -22,9 +22,9 @@ function Navbar() {
                         </Link>
                     </div>
                     <div className="navbar-item ">
-                        <Link to={'/cv'}>
+                        <a href="https://media-exp1.licdn.com/dms/document/C4D2DAQFkdR1leemrSg/profile-treasury-document-pdf-analyzed/0/1655800588755?e=1656547200&v=beta&t=NoUVa-irrcJTuSlVNJ_bHkF0-62C4g-Qpwgofl7dcPI">
                             <p className="navbar-text">CV</p>
-                        </Link>
+                        </a>
                     </div>
                 </div>
             }
@@ -37,9 +37,9 @@ function Navbar() {
                         </Link>
                     </div>
                     <div className="navbar-item ">
-                        <Link to={'/cv'}>
+                    <a href="https://media-exp1.licdn.com/dms/document/C4D2DAQFkdR1leemrSg/profile-treasury-document-pdf-analyzed/0/1655800588755?e=1656547200&v=beta&t=NoUVa-irrcJTuSlVNJ_bHkF0-62C4g-Qpwgofl7dcPI">
                             <p className="navbar-text">CV</p>
-                        </Link>
+                        </a>
                     </div>
                 </div>
             }
