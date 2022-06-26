@@ -6,7 +6,6 @@ function Footer() {
 
     return (
         <footer>
-            <div><p style={{ color: 'black' }}>With Great Power Comes Great Responsibility</p></div>
             <div id='icons-container'>
                 <div className="icon-container">
                     <a href="https://github.com/idanb93">
