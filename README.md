@@ -1,70 +1,24 @@
-# Getting Started with Create React App
+# Link
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+www.idans-portfolio.com
 
-## Available Scripts
+# Synopsis
 
-In the project directory, you can run:
+In this project I built a client application - Projects Portfolio which shows all of my projects. I used React.js, Redux.js
 
-### `npm start`
+The client application is deployed on AWS S3 bucket, I have purchased a domain from GoDaddy, added a public SSL certificate from AWS, added a cloudfront distribution and configured a command to clear it's cache whenever i am deploying changes in the project.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Goals
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- build a portfolio page that looks great, using React.
+- learn about the pros of using a front-end framework(React), Divide into small components, Components hierarchy, States, Props, Hooks. 
+- learn how to deploy a static website on AWS.
 
-### `npm test`
+## Motivation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+During the project I experimented with the following:
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Experinced with React, Components, States, Hooks.
+- Experinced with a state management Redux, Connecting the different components to the store and updating the store.
+- Experienced with creating AWS S3 Bucket, Create AWS Route 53 to manage DNS records for the website, Purchasing a domain from GoDaddy, doing DNS configurations
+creating a public SSL certificate and pin it to Route 53, use CloudFront distribution to attach the SSL certificate to the website, Clearing CloudFront cache everytime i deploy new changes to the project.
