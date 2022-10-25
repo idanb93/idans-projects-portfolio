@@ -3,9 +3,7 @@ import { useLocation } from "react-router-dom"
 
 function Navbar() {
   const location = useLocation()
-
   const openRoutes = ["/"]
-
   const isMainPage = openRoutes.includes(location.pathname)
 
   return (
@@ -41,24 +39,6 @@ function Navbar() {
       )}
     </div>
   )
-
-  // return (
-
-  //     <>
-  //         <div className="navbar">
-  //             <div className="navbar-item ">
-  //                 <Link to={'/contact'}>
-  //                     <p className="navbar-text">Contact</p>
-  //                 </Link>
-  //             </div>
-  //             <div className="navbar-item ">
-  //                 <Link to={'/cv'}>
-  //                     <p className="navbar-text">CV</p>
-  //                 </Link>
-  //             </div>
-  //         </div>
-  //     </>
-  // )
 }
 
 export default Navbar

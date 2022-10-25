@@ -1,25 +1,32 @@
 function AboutMe() {
+  return (
+    <div id="about-me">
+      <div id="about-me-title">
+        <h2>Hello, my name is Idan</h2>
+      </div>
 
-    return (
-        <div id='about-me'>
-
-            <div id='about-me-title'>
-                <h2>Hi, I'm Idan</h2>
-            </div>
-
-            <div id='about-me-body'>
-                <h3>Full Stack Developer experienced in JavaScript and Python based programming with a background in Cyber.</h3>
-                <h3>Possess strong skills in computer networks and troubleshooting that help cyber companies deliver features and fix bugs more quickly</h3>
-                <h3>I have rich experience with a variety of programming languages ​​and frameworks, development of E2E features f
-                     
-                      
-                      rom scratch on both server side and client side. </h3>
-                <h3>problem solver, independent employee with high attention to detail. Fan of MMA, outdoor activities, TV series and English literature </h3>
-            </div>
-
-        </div>
-
-    )
+      <div id="about-me-body">
+        <p>
+          I'm a <b>Full-Stack Developer</b> experienced in JavaScript and Python
+          based programming with a background in Cyber.
+          <br />
+          I'm a <b>Full-Stack Developer</b>, I recently completed an intensive
+          web development boot camp and hold a B.Sc degree in computer science.
+          I am looking to join a startup as a full-stack developer.
+          <br />
+          Possess strong skills in computer networks and troubleshooting that
+          help cyber companies deliver features and fix bugs more quickly I have
+          rich experience with a variety of programming languages ​​and
+          frameworks, development of E2E features from scratch on both server
+          side and client side.
+          <br />
+          <br />
+          Problem Solver, Team Player, Independent with high attention to
+          detail, Self-learner.{" "}
+        </p>
+      </div>
+    </div>
+  )
 }
 
-export default AboutMe;
+export default AboutMe

@@ -1,22 +1,21 @@
-import Projects from './Projects';
-import Cards from './Cards';
-import Footer from './Footer';
-import Intro from './Intro';
-import AboutMe from './AboutMe';
-import Boxes from './Boxes';
+import Projects from "./Projects"
+import CardsContainer from "./Cards/CardsContainer"
+import Footer from "./Footer"
+import Intro from "./Intro"
+import AboutMe from "./AboutMe"
+import ProjectsContainer from "./Projects/ProjectsContainer"
 
-function MainPage() {
-
-    return (
-        <>
-            <Intro />
-            <AboutMe />
-            <Cards />
-            <Projects/>
-            <Boxes/>
-            <Footer />
-        </>
-    )
+const MainPage = () => {
+  return (
+    <>
+      <Intro />
+      <AboutMe />
+      <CardsContainer />
+      <Projects />
+      <ProjectsContainer />
+      <Footer />
+    </>
+  )
 }
 
-export default MainPage;
+export default MainPage
