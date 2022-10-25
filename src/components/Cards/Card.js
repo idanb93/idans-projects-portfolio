@@ -6,17 +6,21 @@ const Card = (props) => {
         <h2>{props.cardInfos.title}</h2>
       </div>
       <div className="card-body">
-        {props.cardInfos.capabilities.map((capability) => {
-          return <li className="tool">{capability}</li>
-        })}
+        {props.cardInfos.capabilities.map((capability) => (
+          <li key={props.cardInfos.id} className="tool">
+            {capability}
+          </li>
+        ))}
       </div>
       <p className="technologies-and-tools">
         <b>Technologies and Tools:</b>
       </p>
       <div className="card-technologies">
-        {props.cardInfos.tools.map((tool) => {
-          return <li className="tool">{tool}</li>
-        })}
+        {props.cardInfos.tools.map((tool) => (
+          <li key={props.cardInfos.id} className="tool">
+            {tool}
+          </li>
+        ))}
       </div>
     </div>
   )

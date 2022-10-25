@@ -1,5 +1,6 @@
 export const cards = [
   {
+    id: 1,
     title: "Front-End Development",
     capabilities: [
       "Building user interfaces from scratch.",
@@ -18,6 +19,7 @@ export const cards = [
     ],
   },
   {
+    id: 2,
     title: "Back-End Development",
     capabilities: [
       "Building a scaleable server-side from scratch. (Router, Business-Logic, Data Access Layer, Working with different DataTypes).",
@@ -37,6 +39,7 @@ export const cards = [
     ],
   },
   {
+    id: 3,
     title: "Networking",
     capabilities: [
       "Able to isolate a networking problem to specific area and solve it.",
@@ -57,6 +60,7 @@ export const cards = [
     ],
   },
   {
+    id: 4,
     title: "Machine-Learning",
     capabilities: [
       "Visualization",

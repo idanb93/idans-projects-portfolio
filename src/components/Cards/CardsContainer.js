@@ -7,6 +7,7 @@ const CardsContainer = () => {
       <div id="cards">
         {cards.map((card) => (
           <Card
+            key={card.id}
             cardInfos={{
               title: card.title,
               capabilities: card.capabilities,
