@@ -7,7 +7,7 @@ export const projects = [
       "https://cdn.loom.com/sessions/thumbnails/f7294c49890e492a86f51121d3ad4b85-with-play.gif",
     description:
       "In this project, I built a full-stack application - Management System for IT Administrators that shows their company's cloud instances. I used Node.js, Express.js with a middleware, PostgreSQL on Heroku, and JWT to handle user sessions.",
-    technologies: "JavaScript, Node.js, Express.js, PostgreSQL, JWT, Heroku",
+    technologies: "JavaScript, Node.js, Express.js, PostgreSQL, JWT",
   },
   {
     id: 2,
@@ -26,8 +26,8 @@ export const projects = [
     projectGif:
       "https://user-images.githubusercontent.com/35878173/104034881-22976680-51da-11eb-9055-85fc1b610809.gif",
     description:
-      "In this project I built a WebAPI that shows my investment portfolio, I used RESTful principles and built the project using SpringBoot framework.",
-    technologies: "Linux, Bash, Docker, Git, Jenkins, Tomcat",
+      "In this project I built backend application - WebAPI that shows my investment portfolio, I used RESTful principles and built the project using SpringBoot framework.",
+    technologies: "Java, Springboot, RESTful API, JSON",
   },
   {
     id: 4,
