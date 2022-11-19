@@ -56,7 +56,7 @@ export const cards = [
       "Docker",
       "Troubleshoot networking issues",
       "AWS ( EC2, S3, Cloudfront, Route 53)",
-      "CI/CD processes (Github Actions, Jenkins)",
+      "CI/CD (Github Actions, Jenkins)",
     ],
   },
   {

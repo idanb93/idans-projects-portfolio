@@ -39,4 +39,24 @@ export const projects = [
       "CI/CD pipeline is built on 2 containers, The first container is Jenkins with a job that automatically retrieves files from a git repository when it detects new commits, The second container is a Tomcat server where the retrieved files from the git repository are being mapped to its webapps folder and automatically being displayed on the server.",
     technologies: "Linux, Bash, Docker, Git, Jenkins, Tomcat",
   },
+  {
+    id: 4,
+    demoUrl: "https://www.youtube.com/watch?v=LkW4Uj31RZ0",
+    projectName: "DevOps",
+    projectGif:
+      "https://user-images.githubusercontent.com/35878173/103166910-60d27480-482f-11eb-8b1e-73edccece4e5.gif",
+    description:
+      "CI/CD pipeline is built on 2 containers, The first container is Jenkins with a job that automatically retrieves files from a git repository when it detects new commits, The second container is a Tomcat server where the retrieved files from the git repository are being mapped to its webapps folder and automatically being displayed on the server.",
+    technologies: "Linux, Bash, Docker, Git, Jenkins, Tomcat",
+  },
+  {
+    id: 4,
+    demoUrl: "https://www.youtube.com/watch?v=LkW4Uj31RZ0",
+    projectName: "DevOps",
+    projectGif:
+      "https://user-images.githubusercontent.com/35878173/103166910-60d27480-482f-11eb-8b1e-73edccece4e5.gif",
+    description:
+      "CI/CD pipeline is built on 2 containers, The first container is Jenkins with a job that automatically retrieves files from a git repository when it detects new commits, The second container is a Tomcat server where the retrieved files from the git repository are being mapped to its webapps folder and automatically being displayed on the server.",
+    technologies: "Linux, Bash, Docker, Git, Jenkins, Tomcat",
+  },
 ]
