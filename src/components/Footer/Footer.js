@@ -6,7 +6,10 @@ function Footer() {
   return (
     <footer>
       <div id="icons-container">
-        <a href="https://github.com/idanb93">
+        <p style={{ fontSize: "2vh", fontFamily: "Inter, sans-serif" }}>
+          Copyrights @ 2022 Idan Bardugo. All rights reserved.
+        </p>
+        {/* <a href="https://github.com/idanb93">
           <div className="icon-container">
             <FaGithub className="icon" />
           </div>
@@ -20,7 +23,7 @@ function Footer() {
           <div className="icon-container">
             <FaRegEnvelope className="icon" />
           </div>
-        </a>
+        </a> */}
       </div>
     </footer>
   )

@@ -1,3 +1,6 @@
+import { FaGithub } from "react-icons/fa"
+import { FaLinkedinIn } from "react-icons/fa"
+import { FaRegEnvelope } from "react-icons/fa"
 import { aboutMe } from "../constants/aboutme"
 
 function AboutMe() {
@@ -45,44 +48,17 @@ function AboutMe() {
         >
           <li>
             <a href="https://github.com/idanb93">
-              <img
-                className="about-me-icon"
-                src={require("../img/github.png")}
-                alt="Github"
-                style={{
-                  height: "3.8vh",
-                  width: "1.8vw",
-                  margin: "0.2vh 0.3vw",
-                }}
-              />{" "}
+              <FaGithub className="icon" />
             </a>
           </li>
           <li>
             <a href="https://www.linkedin.com/in/idan-bardugo/">
-              <img
-                className="about-me-icon"
-                src={require("../img/linkedin.png")}
-                alt="Linkedin"
-                style={{
-                  height: "4vh",
-                  width: "2vw",
-                  margin: "0.0vh 0.5vw",
-                }}
-              />{" "}
+              <FaLinkedinIn className="icon" />
             </a>
           </li>
           <li>
             <a href="mailto:idanbar93@gmail.com">
-              <img
-                className="about-me-icon"
-                src={require("../img/email.png")}
-                alt="Email"
-                style={{
-                  height: "7vh",
-                  width: "3vw",
-                  margin: "-0.8vh -0.1vw",
-                }}
-              />{" "}
+              <FaRegEnvelope className="icon" />
             </a>
           </li>
         </ul>

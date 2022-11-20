@@ -107,18 +107,19 @@
 
 #about-me-body {
   text-align: left;
-  height: 15vh;
+  height: 13vh;
   width: 30vw;
-}
-
-.about-me-icon:hover {
-  color: rgb(121, 197, 197);
 }
 
 .about-me-icons li {
   display: list-item;
   vertical-align: middle;
-  margin: 0.625rem;
+  margin: 17px;
+}
+
+.navbar-icons li {
+  margin: 17px;
+  margin-top: 9px;
 }
 
 .about-me-icons li:hover {
@@ -280,9 +281,22 @@
   border: 0.3vh solid rgb(16, 0, 94);
 }
 
+.icon:hover {
+  color: rgb(121, 197, 197);
+}
+
 .icon {
   height: 4vh;
   width: 2vw;
-  margin-top: 1vh;
+  color: white;
+}
+
+.navbar-icon:hover {
+  color: rgb(121, 197, 197);
+}
+
+.navbar-icon {
+  height: 4vh;
+  width: 2vw;
   color: black;
 }
