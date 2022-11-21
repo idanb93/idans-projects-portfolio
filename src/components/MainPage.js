@@ -1,4 +1,4 @@
-import Projects from "./Projects"
+import BottomSection from "./BottomSection"
 import Footer from "./Footer/Footer"
 import Intro from "./Intro"
 import ProjectsContainer from "./Projects/ProjectsContainer"
@@ -8,7 +8,7 @@ const MainPage = () => {
   return (
     <>
       <Intro />
-      <Projects />
+      <BottomSection />
       <ProjectsTitle />
       <ProjectsContainer />
       <Footer />

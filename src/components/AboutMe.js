@@ -1,7 +1,5 @@
-import { FaGithub } from "react-icons/fa"
-import { FaLinkedinIn } from "react-icons/fa"
-import { FaRegEnvelope } from "react-icons/fa"
 import { aboutMe } from "../constants/aboutme"
+import { aboutMeIcons } from "../constants/icons"
 
 function AboutMe() {
   return (
@@ -46,21 +44,11 @@ function AboutMe() {
           className="about-me-icons"
           style={{ listStyle: "none", padding: "0", display: "flex" }}
         >
-          <li>
-            <a href="https://github.com/idanb93">
-              <FaGithub className="icon" />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/idan-bardugo/">
-              <FaLinkedinIn className="icon" />
-            </a>
-          </li>
-          <li>
-            <a href="mailto:idanbar93@gmail.com">
-              <FaRegEnvelope className="icon" />
-            </a>
-          </li>
+          {aboutMeIcons.map((icon) => (
+            <li>
+              <a href={icon.url}>{icon.reactIconComponent}</a>
+            </li>
+          ))}
         </ul>
       </div>
     </div>

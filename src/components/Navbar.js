@@ -1,10 +1,7 @@
 import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 import { useLocation } from "react-router-dom"
-
-import { FaGithub } from "react-icons/fa"
-import { FaLinkedinIn } from "react-icons/fa"
-import { FaRegEnvelope } from "react-icons/fa"
+import { navbarIcons } from "../constants/icons"
 
 function Navbar() {
   const location = useLocation()
@@ -36,7 +33,10 @@ function Navbar() {
         <>
           <div
             className="navbar"
-            style={{ justifyContent: isIconsAttached ? "space-between" : "" }}
+            style={{
+              justifyContent: isIconsAttached ? "space-between" : "",
+              height: "7vh",
+            }}
           >
             {isIconsAttached && (
               <div style={{ marginLeft: "96px" }}>
@@ -44,46 +44,32 @@ function Navbar() {
                   className="navbar-icons"
                   style={{ listStyle: "none", padding: "0", display: "flex" }}
                 >
-                  <li>
-                    <a href="https://github.com/idanb93">
-                      <FaGithub className="navbar-icon" />
-                    </a>
-                  </li>
-
-                  <li>
-                    <a href="https://www.linkedin.com/in/idan-bardugo/">
-                      <FaLinkedinIn className="navbar-icon" />
-                    </a>
-                  </li>
-
-                  <li>
-                    <a href="mailto:idanbar93@gmail.com">
-                      <FaRegEnvelope className="navbar-icon" />
-                    </a>
-                  </li>
+                  {navbarIcons.map((icon) => (
+                    <li>
+                      <a href={icon.url}>{icon.reactIconComponent}</a>
+                    </li>
+                  ))}
                 </ul>
               </div>
             )}
-            <div className="navbar-item ">
-              <Link className="navbar-link" to={"/contact"}>
-                <p
-                  className="navbar-text"
-                  style={{ color: isOnTop ? "" : "black" }}
+            <div className="navbar-item">
+              <div className="navbar-button">
+                <Link className="navbar-link" to={"/contact"}>
+                  <p className={isOnTop ? "navbar-text" : "scroll-navbar-text"}>
+                    Contact
+                  </p>
+                </Link>
+              </div>
+              <div className="navbar-button">
+                <a
+                  className="navbar-link"
+                  href="https://s3.amazonaws.com/www.idans-portfolio.com/Idan's+Resume.pdf"
                 >
-                  Contact
-                </p>
-              </Link>
-              <a
-                className="navbar-link"
-                href="https://s3.amazonaws.com/www.idans-portfolio.com/Idan's+Resume.pdf"
-              >
-                <p
-                  className="navbar-text"
-                  style={{ color: isOnTop ? "" : "black" }}
-                >
-                  CV
-                </p>
-              </a>
+                  <p className={isOnTop ? "navbar-text" : "scroll-navbar-text"}>
+                    CV
+                  </p>
+                </a>
+              </div>
             </div>
           </div>
         </>
@@ -93,10 +79,7 @@ function Navbar() {
         <div className="navbar">
           <div className="navbar-item ">
             <Link className="navbar-link" to={"/"}>
-              <p
-                className="navbar-text"
-                style={{ color: isOnTop ? "" : "black" }}
-              >
+              <p className={isOnTop ? "navbar-text" : "scroll-navbar-text"}>
                 Main Page
               </p>
             </Link>
@@ -106,10 +89,7 @@ function Navbar() {
               className="navbar-link"
               href="https://s3.amazonaws.com/www.idans-portfolio.com/Idan's+Resume.pdf"
             >
-              <p
-                className="navbar-text"
-                style={{ color: isOnTop ? "" : "black" }}
-              >
+              <p className={isOnTop ? "navbar-text" : "scroll-navbar-text"}>
                 CV
               </p>
             </a>
