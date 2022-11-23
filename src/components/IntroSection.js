@@ -2,12 +2,12 @@ import AboutMe from "./AboutMe"
 import CardsContainer from "./Cards/CardsContainer"
 import { useEffect, useState } from "react"
 
-const Intro = () => {
-  const [isOnTop, setIsOnTop] = useState(true)
+const IntroSection = () => {
+  const [isAtPageTop, setIsAtPageTop] = useState(true)
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      setIsOnTop(window.scrollY === 0)
+      setIsAtPageTop(window.scrollY === 0)
     })
   }, [])
 
@@ -19,7 +19,7 @@ const Intro = () => {
           src={require("../img/north-sydney.jpg")}
           alt="idan"
           style={{
-            filter: isOnTop ? "brightness(100%)" : "brightness(50%)",
+            filter: isAtPageTop ? "brightness(100%)" : "brightness(50%)",
             transition: "filter 1s",
           }}
         />
@@ -32,4 +32,4 @@ const Intro = () => {
   )
 }
 
-export default Intro
+export default IntroSection

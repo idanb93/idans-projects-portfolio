@@ -17,6 +17,10 @@ function Navbar() {
     })
   }, [])
 
+  const scrollIntoSection = (value) => {
+    window.scrollTo(0, value)
+  }
+
   return (
     <div
       style={{
@@ -52,11 +56,58 @@ function Navbar() {
                 </ul>
               </div>
             )}
+
             <div className="navbar-item">
+              <div className="navbar-button">
+                <button
+                  className="navbar-link"
+                  style={{
+                    background: "none",
+                    border: "none",
+                    cursor: "pointer",
+                  }}
+                  onClick={() => scrollIntoSection(0)}
+                >
+                  <p className={isOnTop ? "navbar-text" : "scroll-navbar-text"}>
+                    HOME
+                  </p>
+                </button>
+              </div>
+              <div className="navbar-button">
+                <button
+                  className="navbar-link"
+                  style={{
+                    background: "none",
+                    border: "none",
+                    cursor: "pointer",
+                  }}
+                  onClick={() => scrollIntoSection(693)}
+                >
+                  <p className={isOnTop ? "navbar-text" : "scroll-navbar-text"}>
+                    SKILLS
+                  </p>
+                </button>
+              </div>
+              <div className="navbar-button">
+                <button
+                  className="navbar-link"
+                  style={{
+                    background: "none",
+                    border: "none",
+                    cursor: "pointer",
+                  }}
+                  onClick={() => scrollIntoSection(1560)}
+                >
+                  <p className={isOnTop ? "navbar-text" : "scroll-navbar-text"}>
+                    PROJECTS
+                  </p>
+                </button>
+              </div>
+
               <div className="navbar-button">
                 <Link className="navbar-link" to={"/contact"}>
                   <p className={isOnTop ? "navbar-text" : "scroll-navbar-text"}>
-                    Contact
+                    CONTACT
                   </p>
                 </Link>
               </div>

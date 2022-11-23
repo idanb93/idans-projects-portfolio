@@ -1,13 +1,13 @@
 import BottomSection from "./BottomSection"
 import Footer from "./Footer/Footer"
-import Intro from "./Intro"
+import IntroSection from "./IntroSection"
 import ProjectsContainer from "./Projects/ProjectsContainer"
 import { ProjectsTitle } from "./ProjectsTitle"
 
 const MainPage = () => {
   return (
     <>
-      <Intro />
+      <IntroSection />
       <BottomSection />
       <ProjectsTitle />
       <ProjectsContainer />
